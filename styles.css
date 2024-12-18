@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://source.unsplash.com/1920x1080/?christmas');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ajandek-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .ajandek-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .ajandek-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
