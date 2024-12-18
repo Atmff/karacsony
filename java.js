@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Navigációs gombok
     const tortenetBtn = document.getElementById("tortenet-btn");
     const szavazasBtn = document.getElementById("szavazas-btn");
+    
+    // Szakaszok
     const tortenetSection = document.getElementById("tortenet");
     const szavazasSection = document.getElementById("szavazas");
-  
+    
     // Szavazatok tárolása
     const votes = {
       "Játék": 0,
@@ -20,22 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
       "Egyedi ajándék": 0,
     };
   
-    // Eredmények frissítése
+    // Szavazatokat frissítő függvény
     function updateResults() {
-      for (const ajandek in votes) {
+      Object.keys(votes).forEach(ajandek => {
         const szavazatSpan = document.getElementById(`szavazatok-${ajandek.toLowerCase().replace(/ /g, "-")}`);
         if (szavazatSpan) {
           szavazatSpan.textContent = votes[ajandek];
         }
-      }
+      });
     }
   
-    // Szavazás kezelése a képekre kattintva
+    // Szavazás kezelése: kattintásra növeli a szavazatokat
     document.querySelectorAll(".ajandek-card").forEach(card => {
       card.addEventListener("click", () => {
         const ajandek = card.getAttribute("data-ajandek");
-        votes[ajandek]++;
-        updateResults();
+        votes[ajandek]++;  // Szavazat hozzáadása
+        updateResults();  // Eredmények frissítése
         alert(`Köszönjük a szavazatát a ${ajandek} ajándékra!`);
       });
     });
@@ -51,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tortenetSection.classList.add("d-none");
     });
   
-    updateResults(); // Kezdeti eredmények frissítése
+    // Kezdeti eredmények frissítése
+    updateResults();
   });
   
