@@ -34,96 +34,112 @@
     <section id="szavazas" class="bg-white p-4 rounded shadow my-4">
       <h2>Válaszd ki kedvenc ajándékodat:</h2>
       <div class="row">
-        <!-- Ajándékok menü -->
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Játék">
+        <!-- Játék -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="jatek">
             <img src="https://th.bing.com/th/id/OIP.ShIlfqIKJidt4OnQGMHZ3QHaFW?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Játék">
             <h4>Játék</h4>
             <p>Szavazatok: <span id="szavazatok-jatek">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Könyv">
+
+        <!-- Könyv -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="konyv">
             <img src="https://th.bing.com/th/id/OIP.0jnieo_LRjfagiInFtrI0AHaKh?w=202&h=287&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Könyv">
             <h4>Könyv</h4>
             <p>Szavazatok: <span id="szavazatok-konyv">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Ruházat">
+
+        <!-- Ruházat -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="ruhazat">
             <img src="https://th.bing.com/th/id/OIP.8dZj3H12fsJLXv0VE5rIrwHaKd?w=142&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Ruházat">
             <h4>Ruházat</h4>
             <p>Szavazatok: <span id="szavazatok-ruhazat">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Édesség">
-            <img src="https://th.bing.com/th/id/OIP.rpmgxPVxjsLGfZ2JhPb6BwHaFC?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Édesség">
-            <h4>Édesség</h4>
-            <p>Szavazatok: <span id="szavazatok-edesseg">0</span></p>
+
+        <!-- Elektronika -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="elektronika">
+            <img src="https://th.bing.com/th/id/OIP.oJMBCaf8z-IjW5aSmZEf2wHaDt?w=342&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Elektronika">
+            <h4>Elektronika</h4>
+            <p>Szavazatok: <span id="szavazatok-elektronika">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Elektronikai eszköz">
-            <img src="https://th.bing.com/th/id/OIP.oJMBCaf8z-IjW5aSmZEf2wHaDt?w=342&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Elektronikai eszköz">
-            <h4>Elektronikai eszköz</h4>
-            <p>Szavazatok: <span id="szavazatok-elektronikai-eszkoz">0</span></p>
+
+        <!-- Családi játék -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="csaladi-jatek">
+            <img src="https://th.bing.com/th/id/OIP.NMFFLeAZGxXGsEztHSLgcgHaE7?w=270&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Családi játék">
+            <h4>Családi játék</h4>
+            <p>Szavazatok: <span id="szavazatok-csaladi-jatek">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Lakberendezés">
-            <img src="https://th.bing.com/th/id/OIP.52XP7C99pzZLKtVJLDcPpgHaE4?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Lakberendezés">
-            <h4>Lakberendezés</h4>
-            <p>Szavazatok: <span id="szavazatok-lakberendezes">0</span></p>
+
+        <!-- Konyhai eszközök -->
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="konyhai-eszkozok">
+            <img src="https://th.bing.com/th/id/OIP.OFmbmroj8v0owBb7xozvMgHaFy?w=249&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Konyhai eszközök">
+            <h4>Konyhai eszközök</h4>
+            <p>Szavazatok: <span id="szavazatok-konyhai-eszkozok">0</span></p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Kézműves termék">
-            <img src="https://th.bing.com/th/id/OIP.atAB6LUsnXtkYgvKPZas9wHaJ4?w=134&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Kézműves termék">
-            <h4>Kézműves termék</h4>
-            <p>Szavazatok: <span id="szavazatok-kezmuves-termek">0</span></p>
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="elmeny-ajandek">
+            <img src="https://th.bing.com/th/id/OIP.MsdFfac6wbvI6p7CRuJi1gHaGN?w=233&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Élmény ajándék">
+            <h4>Konyhai eszközök</h4>
+            <p>Szavazatok: <span id="szavazatok-elmeny-ajandek">0</span></p>
           </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Sportfelszerelés">
-            <img src="https://th.bing.com/th/id/OIP.Dt1wgIk3i0NBeWPyZH3XRwHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Sportfelszerelés">
-            <h4>Sportfelszerelés</h4>
-            <p>Szavazatok: <span id="szavazatok-sportfelszereles">0</span></p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Utazási utalvány">
-            <img src="https://th.bing.com/th/id/OIP.LlZATdjPn4wWfVjhIkDrkQHaFL?w=236&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Utazási utalvány">
-            <h4>Utazási utalvány</h4>
-            <p>Szavazatok: <span id="szavazatok-utazasi-utalvany">0</span></p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Illatszer">
-            <img src="https://th.bing.com/th/id/OIP.BKrpw5Ti_K40awl2uSN8dQHaDN?w=331&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Illatszer">
-            <h4>Illatszer</h4>
-            <p>Szavazatok: <span id="szavazatok-illatszer">0</span></p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Élményajándék">
-            <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Élményajándék">
-            <h4>Élményajándék</h4>
-            <p>Szavazatok: <span id="szavazatok-elmenyajandek">0</span></p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="ajandek-card" data-ajandek="Egyedi ajándék">
-            <img src="https://th.bing.com/th/id/OIP.4YvAeTjJevVtYY-E73DSEQHaFj?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid" alt="Egyedi ajándék">
-            <h4>Egyedi ajándék</h4>
-            <p>Szavazatok: <span id="szavazatok-egyedi-ajandek">0</span></p>
+
+        <div class="col-md-3 mb-3">
+          <div class="ajandek-card" data-ajandek="xbox98-ajandek">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAJUAlQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQIDBAYFB//aAAgBAQAAAAD68AAAAAAAAAAAAAAAAAAAAABmjDr1TCuulM59zKr5M3myzElNrZNpX5tRaTe6e0peD0u3GtxOje6QkV6DpsevyWjdIAr7vQZAAAAAAAAAAAAAAAAAAAAAAP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oACgICEAMQAAAAAAAAAAAAAACwJQAsKIAlEoAIUAAAAAAAAAAAAA//xAA1EAAABAMGAwUHBQEAAAAAAAAAAQIEAwWiERITFlJUBheREBRCVpMgITEyUXDRIkFhcXKS/9oACAEBAAE/APsOpwgvgdoVHWr4HYMVesxiL1mMReoxiRNRjEiazC4sUkqsWoYznWsYznWsFGca1g4zjUsFFca1jFcalhDqMXuWi8XQxDjIX9SP6GXav5F/5MEhdhWIV0FxehXQXF6FdBcXoV0GHE0K6C4vQroEw4mhXQKQskmZoURf17RGL6b1y8V+7eu2++79bAj5i7VHYlR2fAjEfhSM5jxo+YJkjFWpd1C7EpvDJsTzHNfUGTYvmSa+oMmxfMk2/wCxk2L5km3qDJkXzJNvUGTIvmWbeoJfwuuXvILo53MXGHaeFFXahVpWAvYLsOVPjm+P3pHcsfvJosPFxvwEfMnsMyIRYxEky/gTDimXyx3EaRYDha0Em00XbP1FaM+ybbuqBnmVbV5QM9SnaPKBnqU7R5QM9SnaPKBnqU7R5QM9ynavKBnqU7V5QM9SnavKBnqU7V5QM9SnavKBnqU7V5R+RnuUbV5QC4/k1tndnlAks/aTo45t4UZGCpJKxLPECWRhViv3MLbpX41CYcEspi8iuor1ySl3fcm74Ry4lO7c0Dl5LN87pHLyWb53SOXss3zukcvJZvndI5eS3fO6Ry9lm+d0Dl7Ld87pHL2W753SOXst3zukcvZbvndI5ey3fO6Ry9lm+d0jl3Kt46pEn4ZbSXHwXUdeKojO/Z4QUMiKy8f2G//EABcRAQEBAQAAAAAAAAAAAAAAABEAUED/2gAIAQIBAT8AwCI42c7/xAAXEQEBAQEAAAAAAAAAAAAAAAARAFBA/9oACAEDAQE/AMBnkIzv/9k=" class="img-fluid" alt="xbox98-ajandek">
+            <h4>xbox98</h4>
+            <p>Szavazatok: <span id="szavazatok-xbox98-ajandek">0</span></p>
           </div>
         </div>
       </div>
+      <div class="col-md-3 mb-3">
+        <div class="ajandek-card" data-ajandek="focilabda-ajandek">
+          <img src="https://th.bing.com/th?id=OIP.3LdxNH36dAIzsO24PdCf_AHaHa&w=178&h=200&c=12&rs=1&p=0&o=6&dpr=1.3&pid=23.1" class="img-fluid" alt="Focilabda">
+          <h4>Foci labda</h4>
+          <p>Szavazatok: <span id="szavazatok-focilabda-ajandek">0</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="ajandek-card" data-ajandek="pees5-ajandek">
+          <img src="https://th.bing.com/th?id=OSK.HEROMUvmLFUviPU-F9_SnBfG3lHljxb8ekOf1Ndkfn8KrQY&w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" class="img-fluid" alt="pees5-ajandek">
+          <h4>ps5</h4>
+          <p>Szavazatok: <span id="szavazatok-pees5-ajandek">0</span></p>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-3 mb-3">
+        <div class="ajandek-card" data-ajandek="szek-ajandek">
+          <img src="https://www.bing.com/th?id=OPEC.DgEpaxIBVo1pFg474C474&o=5&pid=21.1&w=148&h=251&qlt=100&dpr=1.3&bw=6&bc=FFFFFF" class="img-fluid" alt="szek-ajandek">
+          <h4>szek</h4>
+          <p>Szavazatok: <span id="szavazatok-szek-ajandek">0</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="ajandek-card" data-ajandek="gep-ajandek">
+          <img src="https://th.bing.com/th?id=OIP.AsPZ-OWjwwu4h6Orz3EDAwAAAA&w=119&h=104&c=7&bgcl=472e33&r=0&o=6&dpr=1.3&pid=13.1" class="img-fluid" alt="gep-ajandek">
+          <h4>gep</h4>
+          <p>Szavazatok: <span id="szavazatok-gep-ajandek">0</span></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
     </section>
   </div>
 
-  <script src="java.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="java.js"></script>
 </body>
 </html>
